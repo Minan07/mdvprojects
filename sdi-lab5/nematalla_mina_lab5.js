@@ -5,29 +5,26 @@
 var numb1;
 var numb2;
 var procedure;
-var product
+var division;
 
 // function
-var Multiplication = function(x,y) {
-	var product;
-	product = (x * y);
-	return product;
+var Divide = function(x,y) {
+	var division;
+	division = (x / y);
+	return division;
 };
 
 // user input
 numb1		= parseFloat(prompt("What is your first value?"));
 numb2		= parseFloat(prompt("What is your second value?"));
 procedure 	= prompt("Put in your operation");
-product   =("The product of numb1 and numb2");
+division    =("The division of numb1 and numb2");
 
 // conditionals
-if(procedure === "Multiplication" || procedure === " * ") {
+if(procedure === "Divide" || procedure === " / ") {
 	
-	product = Multiplication(numb1, numb2);
-	console.log("The product of", + numb1 + " and " + numb2 + " equals " + product );
-	
+	product = Division(numb1, numb2);
+	console.log("The division " + numb1 + " and " + numb2 + " equals " + division );
+
+
 };
-
-
-
-
