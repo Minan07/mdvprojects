@@ -5,34 +5,37 @@
 // Lab 5
 // Date: 07/17/2014
 
+
+
 // variables
 
-var numb1;
-var numb2;
+var numb1
+var numb2
 var procedure;
-var sum;
+var difference;
 
 // function
-var calculator = function(x,y) {
-	var sum;
-	sum = (x + y);
-	return sum
+var Subtraction = function(x,y) {
+	var Subtraction;
+	difference = (x - y);
+	return difference
 };
+
 
 // user input
-numb1		= parseFloat(prompt("What is your first value?"));
-numb2		= parseFloat(prompt("What is your second value?"));
-procedure 	= prompt("Do you want to Add (+), Subtract (-), Multiply(x), Divide(/)");
-sum 			= ("The sum of numb1 and numb2");
+
+numb1           = parseFloat(prompt("What is your value?"));
+numb2           = parseFloat(prompt("What is your value?"));
+procedure       = prompt("PLease enter operation");
+difference      = ("The difference of numb1 and numb2");
 
 // conditionals
-if(procedure === "Add" || procedure === " + ") {
+if(procedure === "Subtraction" || procedure === " - ") {
 	
-	sum = calculator(numb1, numb2);
-	console.log("The sum of", + numb1 + " and " + numb2 + " equals " + sum );
+	difference = Subtraction(numb1, numb2);
+	console.log("The difference of", + numb1 + " and " + numb2 + " equals " + difference);
 	
 };
-// 
 
 
 
