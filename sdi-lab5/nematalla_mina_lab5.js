@@ -2,29 +2,59 @@
 
 
 // variables
-var numb1;
-var numb2;
-var procedure;
-var division;
+var username;
+var password;
+var login
 
-// function
-var Divide = function(x,y) {
-	var division;
-	division = (x / y);
-	return division;
-};
-
-// user input
-numb1		= parseFloat(prompt("What is your first value?"));
-numb2		= parseFloat(prompt("What is your second value?"));
-procedure 	= prompt("Put in your operation");
-division    =("The division of numb1 and numb2");
-
-// conditionals
-if(procedure === "Divide" || procedure === " / ") {
+var checkLogin = function (uname, pword) {
 	
-	product = Division(numb1, numb2);
-	console.log("The division " + numb1 + " and " + numb2 + " equals " + division );
-
-
+	if (uname === "mnematalla" && pword === "password") {
+		
+		return true;
+		
+	} else {
+		
+		return false;
+	}
 };
+
+username = prompt("Please enter your username: ");
+password = prompt("Please enter your password: ");
+login = checkLogin(username, password);
+
+if (login === true) {
+	
+	console.log("Welcome, we have been expecting you!");
+	
+} else {
+	
+	console.log("Woah hold up, who are you! INTRUDER ALERT!");
+	
+	
+}
+
+
+var myHello = function(firstName) {
+	
+	if(firstName === "Mina") {
+		console.log("Ugh, Not you again!");
+		
+	} else {
+		console.log("Welcome, Mina!")
+	}
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
