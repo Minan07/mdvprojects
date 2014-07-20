@@ -31,7 +31,7 @@ var sportsTeam = function(){
 	console.log(sportsTeam);
 	
 	var nbaTeam = sportsTeam.pop();
-	sportsTeam.pop("Rockets");
+	city.pop("Houston");
 	console.log(sportsTeam);
 	
 	
